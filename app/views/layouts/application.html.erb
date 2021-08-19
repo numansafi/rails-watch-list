@@ -12,6 +12,9 @@
   </head>
 
   <body>
+    <span><%= link_to "My list", lists_path %></span>
+    <span><%= link_to "Create list", new_list_path %></span>
+    <hr>
     <%= yield %>
   </body>
 </html>
