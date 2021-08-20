@@ -1,3 +1,5 @@
 <% @lists.each do |list| %>
   <h5><%= link_to list.name, list_path(list) %></h5>
+  <span><%= link_to 'edit', edit_list_path(list) %></span>
+  <span><%= link_to 'delete', list_path(list), method: :delete %></span>
 <% end %>
